@@ -1,0 +1,28 @@
+{
+    "manufacturer": "OakNinja",
+    "keyboard_name": "qp_display_only",
+    "maintainer": "OakNinja",
+    "bootloader": "rp2040",
+    "processor": "RP2040",
+    "url": "",
+    "usb": {
+        "device_version": "1.0.0",
+        "vid": "0xE230",
+        "pid": "0x1337"
+    },
+    "features": {
+        "bootmagic": true
+    },
+    "matrix_pins": {
+        "direct": [
+            ["GP1"]
+        ]
+    },
+    "layouts": {
+        "LAYOUT_1x1": {
+            "layout": [
+                {"matrix": [0, 0], "x": 0, "y": 0}
+            ]
+        }
+    }
+}
