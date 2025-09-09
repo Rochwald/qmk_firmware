@@ -40,8 +40,17 @@ uint16_t dynamic_keymap_get_keycode(uint8_t layer, uint8_t row, uint8_t column) 
     return nvm_dynamic_keymap_read_keycode(layer, row, column);
 }
 
+/////////////////////////////////////////////////////////////////////
+// ADDED: TEST!!!!!!!!!
+__attribute__((weak)) void dynamic_keymap_user_keycode_changed(uint8_t layer, uint8_t key, uint16_t keycode) {}
+////////////////////////////////////////////////////////////////////
+
 void dynamic_keymap_set_keycode(uint8_t layer, uint8_t row, uint8_t column, uint16_t keycode) {
     nvm_dynamic_keymap_update_keycode(layer, row, column, keycode);
+    // ADDED: TEST ////////////////////////////////////////////////////////////
+    uint8_t key = row * MATRIX_COLS + column;
+    dynamic_keymap_user_keycode_changed(layer, key, keycode);
+    ///////////////////////////////////////////////////////////////////////////
 }
 
 #ifdef ENCODER_MAP_ENABLE
