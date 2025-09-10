@@ -1,14 +1,14 @@
 # RoKeyTrackPad
 
-Also see [RoKeyPad](ADD LINK).
+Also see [RoKeyPad](https://github.com/Rochwald/qmk_firmware/tree/master/keyboards/rokeypad/v2_0).
 
 ![rokeypad_trackpad_finished](slika_razsiritveni_modul_finished.jpg)
 
-4x1 macropad with 240x240 color display, 2 joysticks, trackpad and magnetic USB interface to easily add more modules for a lot of customizability. Trackpad is implemented on separate PCB with I2C signals exposed, so in theory, and I2C device can be connected instead of the trackpad module for further costumizability.
+4x1 macropad with 240x240 color display, 2 joysticks, trackpad and magnetic USB interface to easily add more modules for a lot of customizability. Trackpad is implemented on separate PCB with I2C signals exposed, so in theory, any I2C device can be connected instead of the trackpad module for further customizability.
 
 * Keyboard Maintainer: [Rok Hrovat](https://github.com/Rochwald)
 * Hardware Supported: Custom PCB using STM32F4
-* Hardware design files: [LINK](ADD LINK)
+* Hardware design files: [LINK 1](https://github.com/Rochwald/RoKeyPad_Hardware/tree/master/RoKeyPad_v2.1_controller) and [LINK 2](https://github.com/Rochwald/RoKeyPad_Hardware/tree/master/RoKeyPad_v2.1_trackpad) 
 
 Make example for this keyboard (after setting up your build environment):
 
