@@ -218,10 +218,10 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
             rgblight_sethsv(HSV_BLUE);
             break;
         case 3:
-            rgblight_sethsv(HSV_PINK);
+            rgblight_sethsv(HSV_ALTIUM);
             break;
         case 4:
-            rgblight_sethsv(HSV_YELLOW);
+            rgblight_sethsv(HSV_PINK);
             break;
         default: //  for any other layers, or the default layer
             rgblight_sethsv(HSV_OFF);
@@ -265,10 +265,10 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
                 rgb_matrix_sethsv(HSV_BLUE);
                 break;
             case 3:
-                rgb_matrix_sethsv(HSV_PINK);
+                rgb_matrix_sethsv(HSV_ALTIUM);
                 break;
             case 4:
-                rgb_matrix_sethsv(HSV_YELLOW);
+                rgb_matrix_sethsv(HSV_PINK);
                 break;
             default:
                 rgb_matrix_sethsv(HSV_OFF);
@@ -295,7 +295,7 @@ bool handle_custom_key(uint16_t keycode, keyrecord_t *record, void (*action)(voi
     return false;  // suppress normal keycode
 }
 
-// --- Action functions for custom keycodes ---
+// Action functions for custom keycodes
 static void action_lay_up(void) {
     uint8_t current_layer = get_highest_layer(layer_state);
     if (current_layer < LAYER_CYCLE_START || current_layer > LAYER_CYCLE_END) return;

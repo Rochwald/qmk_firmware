@@ -83,7 +83,7 @@ uint32_t display_task_callback(uint32_t trigger_time, void *cb_arg) {
 
 const char *shorten_keycode(uint16_t keycode) {
     switch (keycode) {
-        case KC_NO:          return " ";
+        case KC_NO:          return "";
         case KC_NUM_LOCK:    return "NUMLOCK";
         case KC_KP_SLASH:    return "/";
         case KC_KP_ASTERISK: return "*";
@@ -245,13 +245,13 @@ void display_task_kb(void) {
                 break;
 
             case 3:
-                current_layer_color = (hsv_helper_t){HSV_PINK};
+                current_layer_color = (hsv_helper_t){HSV_ALTIUM};
                 display_write_layer_name("Altium", font20, current_layer_color.h, current_layer_color.s, current_layer_color.v);
                 display_write_all_keycodes(3, font12);
                 break;
 
             case 4:
-                current_layer_color = (hsv_helper_t){HSV_YELLOW};
+                current_layer_color = (hsv_helper_t){HSV_PINK};
                 display_write_layer_name("Settings", font20, current_layer_color.h, current_layer_color.s, current_layer_color.v);
                 display_write_all_keycodes(4, font12);
                 break;

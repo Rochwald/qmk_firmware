@@ -14,6 +14,10 @@
 #include "graphics/roboto20.qff.h"
 #include "graphics/roboto12.qff.h"
 
+// altium logo color: R:213, G:189, B:129
+// #define RGB_ALTIUM 0xD5, 0xBD, 0x81
+#define HSV_ALTIUM   31,   99,  214
+
 extern painter_device_t display;
 extern painter_font_handle_t font_bold32;
 extern painter_font_handle_t font20;
