@@ -293,7 +293,7 @@ void post_process_record_kb(uint16_t keycode, keyrecord_t *record) {  // is exec
 
 void housekeeping_task_kb(void) {
     #if defined(DISPLAY_BACKLIGHT_TIMEOUT) && (DISPLAY_BACKLIGHT_TIMEOUT > 0)
-    display_timeout_backlight();
+        display_timeout_backlight();
     #endif
 }
 

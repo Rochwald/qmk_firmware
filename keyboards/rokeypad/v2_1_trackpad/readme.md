@@ -8,7 +8,7 @@ Also see [RoKeyPad](https://github.com/Rochwald/qmk_firmware/tree/master/keyboar
 
 * Keyboard Maintainer: [Rok Hrovat](https://github.com/Rochwald)
 * Hardware Supported: Custom PCB using STM32F4
-* Hardware design files: [LINK 1](https://github.com/Rochwald/RoKeyPad_Hardware/tree/master/RoKeyPad_v2.1_controller) and [LINK 2](https://github.com/Rochwald/RoKeyPad_Hardware/tree/master/RoKeyPad_v2.1_trackpad) 
+* Hardware design files: [controller](https://github.com/Rochwald/RoKeyPad_Hardware/tree/master/RoKeyPad_v2.1_controller) and [trackpad](https://github.com/Rochwald/RoKeyPad_Hardware/tree/master/RoKeyPad_v2.1_trackpad)
 
 Make example for this keyboard (after setting up your build environment):
 

@@ -21,7 +21,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     )
 };
 
-// joystick configuration
+// joystick configuration for gamepad
 joystick_config_t joystick_axes[JOYSTICK_AXIS_COUNT] = {
     [0] = JOYSTICK_AXIS_IN(C4, 0, 512, 1023),   // JOYSTICK1_X
     [1] = JOYSTICK_AXIS_IN(C5, 0, 512, 1023),   // JOYSTICK1_Y

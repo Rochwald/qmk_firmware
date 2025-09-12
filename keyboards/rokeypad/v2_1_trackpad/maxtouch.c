@@ -102,7 +102,7 @@ static uint16_t cpi                                             = MXT_DEFAULT_DP
 // in the case of a tap.
 static bool extra_event                                         = false;
 
-void pointing_device_driver_init(void) {
+bool pointing_device_driver_init(void) {
     mxt_information_block information = {0};
 
     i2c_init();
@@ -232,6 +232,7 @@ void pointing_device_driver_init(void) {
             dprintf("T100 Configuration failed: %d\n", status);
         }
     }
+    return true;
 }
 
 report_mouse_t pointing_device_driver_get_report(report_mouse_t mouse_report) {
